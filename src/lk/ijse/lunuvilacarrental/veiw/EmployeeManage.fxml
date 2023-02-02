@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.lunuvilacarrental.controller.EmployeeManageController">
+   <children>
+      <ImageView fitHeight="1087.0" fitWidth="1940.0" layoutX="-12.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Desktop-1(3).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="672.0" layoutY="30.0" prefHeight="103.0" prefWidth="802.0" text="Employee Management">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Separator layoutX="717.0" layoutY="114.0" prefHeight="40.0" prefWidth="459.0" />
+      <Label layoutX="709.0" layoutY="193.0" prefHeight="51.0" prefWidth="225.0" text="Employee ID :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmployeeID" layoutX="709.0" layoutY="246.0" prefHeight="51.0" prefWidth="325.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <Label layoutX="1254.0" layoutY="191.0" prefHeight="51.0" prefWidth="112.0" text="Name :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="1251.0" layoutY="234.0" prefHeight="63.0" prefWidth="491.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <Label layoutX="711.0" layoutY="372.0" text="Address :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1232.0" layoutY="374.0" prefHeight="51.0" prefWidth="143.0" text="NIC :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddress" layoutX="709.0" layoutY="420.0" prefHeight="52.0" prefWidth="335.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXButton layoutX="1281.0" layoutY="951.0" onAction="#AddOnAction" prefHeight="74.0" prefWidth="175.0" text="Add">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1726.0" layoutY="949.0" onAction="#btnBackOnAction" prefHeight="80.0" prefWidth="179.0" ripplerFill="#c36161" text="Back" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="983.0" layoutY="519.0" prefHeight="430.0" prefWidth="918.0">
+         <columns>
+            <TableColumn prefWidth="207.0" text="Cus ID" />
+            <TableColumn prefWidth="248.0" text="Name" />
+            <TableColumn prefWidth="240.0" text="Address" />
+            <TableColumn minWidth="0.0" prefWidth="136.0" text="Gender" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="464.0" fitWidth="762.0" layoutX="369.0" layoutY="607.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/OIP-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="-221.0" layoutY="88.0" onAction="#CustomerOnAction" prefHeight="159.0" prefWidth="865.0" ripplerFill="#b2b2b2" text="Customers" textFill="#ababab" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="-209.0" layoutY="659.0" onAction="#EmployeeOnAction" prefHeight="159.0" prefWidth="855.0" ripplerFill="#b2b2b2" style="-fx-background-color: white;" text="Employees" textFill="#1e1d1d" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="-344.0" layoutY="477.0" onAction="#CarOnAction" prefHeight="159.0" prefWidth="990.0" ripplerFill="#b2b2b2" text="Cars" textFill="#ababab" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="-198.0" layoutY="288.0" onAction="#RentDetailsOnAction" prefHeight="159.0" prefWidth="860.0" ripplerFill="#b2b2b2" text="Rent Details" textFill="#ababab" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="-272.0" layoutY="847.0" onAction="#FinanceOnAction" prefHeight="159.0" prefWidth="919.0" ripplerFill="#b2b2b2" text="Finance" textFill="#ababab" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtNic" layoutX="1232.0" layoutY="426.0" prefHeight="51.0" prefWidth="518.0" />
+      <JFXButton layoutX="1442.0" layoutY="953.0" onAction="#UpdateOnAction" prefHeight="74.0" prefWidth="175.0" text="Update">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1597.0" layoutY="954.0" onAction="#DeleteOnAction" prefHeight="74.0" prefWidth="175.0" text="Delete">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1047.0" layoutY="249.0" onAction="#SearchOnAction" prefHeight="52.0" prefWidth="93.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnAddDriver" layoutX="883.0" layoutY="964.0" onAction="#AddDriverOnAction" prefHeight="54.0" prefWidth="155.0" text="Add Driver">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

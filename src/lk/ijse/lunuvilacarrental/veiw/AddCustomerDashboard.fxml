@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.lunuvilacarrental.controller.AddCustomerDashboardController">
+   <children>
+      <ImageView fitHeight="1068.0" fitWidth="1927.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Desktop-1(3).jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9fbfc" height="200.0" layoutX="-1.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="642.0" />
+      <Label layoutX="49.0" layoutY="228.0" prefHeight="149.0" prefWidth="524.0" text="Customer Details">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="464.0" prefHeight="149.0" prefWidth="588.0" text="Package Details" textFill="#a1a1a1">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="649.0" prefHeight="149.0" prefWidth="582.0" text="Payment Details" textFill="#a1a1a1">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="741.0" layoutY="198.0" prefHeight="59.0" prefWidth="185.0" text="Customer ID :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="746.0" layoutY="526.0" text="Address :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="750.0" layoutY="660.0" prefHeight="51.0" prefWidth="143.0" text="NIC No :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="744.0" layoutY="353.0" prefHeight="51.0" prefWidth="100.0" text="Name :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="672.0" layoutY="30.0" prefHeight="103.0" prefWidth="482.0" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Separator layoutX="666.0" layoutY="103.0" prefHeight="40.0" prefWidth="346.0" />
+      <JFXTextField fx:id="txtCusID" layoutX="745.0" layoutY="246.0" onKeyPressed="#CusIdOnKeyPrtess" prefHeight="75.0" prefWidth="451.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="746.0" layoutY="396.0" prefHeight="75.0" prefWidth="459.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="741.0" layoutY="567.0" prefHeight="59.0" prefWidth="471.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="1401.0" layoutY="897.0" onAction="#BackOnAction" prefHeight="83.0" prefWidth="162.0" style="-fx-background-radius: 75;" text="Back" textFill="#b21a1a">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="0.980952380952381" endY="1.0" startX="0.49523809523809526" startY="0.3523809523809524">
+               <stops>
+                  <Stop color="#b0101069" />
+                  <Stop color="#220101" offset="0.9961685823754789" />
+                  <Stop color="#21010191" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1598.0" layoutY="897.0" onAction="#ProceedOnAction" prefHeight="89.0" prefWidth="161.0" style="-fx-background-radius: 75;" text="Proceed →" textFill="#5ec356">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.34285714285714286">
+               <stops>
+                  <Stop color="#47ba2385" />
+                  <Stop color="#47ba2385" offset="0.007662835249042145" />
+                  <Stop color="#123b05c2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <ImageView fitHeight="336.0" fitWidth="340.0" layoutX="456.0" layoutY="727.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/4480160.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="625.0" fitWidth="600.0" layoutX="1318.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Payroll-1.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtNic" layoutX="744.0" layoutY="713.0" prefHeight="51.0" prefWidth="471.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+   </children>
+</AnchorPane>

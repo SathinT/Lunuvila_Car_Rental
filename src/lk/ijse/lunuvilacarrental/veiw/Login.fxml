@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.lunuvilacarrental.controller.LoginController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="2048.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Desktop-1(3).jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="36.0" arcWidth="5.0" fill="#ffffff63" height="462.0" layoutX="445.0" layoutY="70.0" opacity="0.71" stroke="BLACK" strokeType="INSIDE" visible="false" width="296.0" />
+      <Label layoutX="1116.0" layoutY="145.0" prefHeight="82.0" prefWidth="296.0" text="OG IN" textFill="#8a8a8a">
+         <font>
+            <Font name="Arial Bold" size="80.0" />
+         </font>
+      </Label>
+      <Circle fill="#3979b947" layoutX="1081.0" layoutY="185.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="1054.0" layoutY="126.0" prefHeight="82.0" prefWidth="33.0" text="L" textFill="#8a8a8a">
+         <font>
+            <Font name="Arial Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="993.0" layoutY="331.0" prefHeight="46.0" prefWidth="393.0" text="Username :" textFill="#141414">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUsername" blendMode="SRC_ATOP" focusColor="#2c79e4" labelFloat="true" layoutX="999.0" layoutY="402.0" onAction="#usernameOnAction" onKeyPressed="#UsernameKeyPress" prefHeight="66.0" prefWidth="497.0" unFocusColor="#7793a8">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="30.0" />
+         </font></JFXTextField>
+      <Label layoutX="991.0" layoutY="538.0" prefHeight="73.0" prefWidth="248.0" text="Password :" textFill="#141414">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="txtPassword" focusColor="#2c79e4" focusTraversable="false" layoutX="1000.0" layoutY="629.0" onAction="#PasswordOnAction" onKeyPressed="#PasswordKeyPress" prefHeight="68.0" prefWidth="501.0" unFocusColor="#7793a8">
+         <font>
+            <Font size="30.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="BtnLogIn" buttonType="RAISED" layoutX="986.0" layoutY="800.0" onAction="#LogInOnAction" prefHeight="107.0" prefWidth="522.0" style="-fx-background-color: #183152; -fx-border-radius: 100; -fx-background-radius: 100;" text="Log In" textFill="#d7d7d7">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#87b6da" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="618.0" fitWidth="676.0" layoutX="44.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

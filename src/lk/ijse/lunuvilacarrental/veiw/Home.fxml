@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.lunuvilacarrental.controller.HomeController">
+   <children>
+      <ImageView fitHeight="1070.0" fitWidth="1920.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Desktop-1(6).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="663.0" fitWidth="1172.0" layoutX="361.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Desktop%20-%201%20(4).jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="780.0" layoutY="296.0" onAction="#NewRentOnAction" prefHeight="213.0" prefWidth="552.0" text="New Rent">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="0.9523809523809523" endY="1.0" startX="0.45238095238095233" startY="0.5666666666666667">
+               <stops>
+                  <Stop color="#1d3f8a" />
+                  <Stop color="#1d3f8a" offset="0.007662835249042145" />
+                  <Stop color="#09124a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="813.0" layoutY="538.0" onAction="#ManagementOnAction" prefHeight="201.0" prefWidth="494.0" text="Management">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="0.9523809523809523" endY="1.0" startX="0.45238095238095233" startY="0.5666666666666667">
+               <stops>
+                  <Stop color="#1d3f8a" />
+                  <Stop color="#09124a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <ImageView fitHeight="244.0" fitWidth="247.0" layoutX="510.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/istockphoto-860969640-612x612-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="204.0" fitWidth="196.0" layoutX="537.0" layoutY="546.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/R__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

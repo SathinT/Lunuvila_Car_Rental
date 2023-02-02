@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.lunuvilacarrental.controller.PackSelectDashboardController">
+   <children>
+      <ImageView fitHeight="1066.0" fitWidth="1922.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Desktop-1(3).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="682.0" layoutY="16.0" prefHeight="103.0" prefWidth="532.0" text="Package Details">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Separator layoutX="696.0" layoutY="87.0" prefHeight="40.0" prefWidth="304.0" />
+      <Label layoutX="690.0" layoutY="258.0" prefHeight="103.0" prefWidth="294.0" text="Car Select" textFill="#868383" underline="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="729.0" layoutY="374.0" prefHeight="51.0" prefWidth="121.0" text="Car ID :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="734.0" layoutY="463.0" prefHeight="51.0" prefWidth="121.0" text="Brand :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="729.0" layoutY="549.0" prefHeight="51.0" prefWidth="121.0" text="Model :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="695.0" layoutY="620.0" prefHeight="51.0" prefWidth="177.0" text="Fuel Type :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1388.0" layoutY="255.0" prefHeight="103.0" prefWidth="368.0" text="Driver Select" textFill="#868383" underline="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="1373.0" layoutY="378.0" prefHeight="51.0" prefWidth="161.0" text="Driver ID :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1319.0" layoutY="480.0" prefHeight="51.0" prefWidth="221.0" text="Employee ID :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1320.0" layoutY="575.0" prefHeight="51.0" prefWidth="221.0" text="Driver Name :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1291.0" layoutY="679.0" prefHeight="51.0" prefWidth="249.0" text="Driver Address :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="208.0" fitWidth="304.0" layoutX="658.0" layoutY="831.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/R(2).png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1412.0" layoutY="890.0" onAction="#BackOnAction" prefHeight="89.0" prefWidth="160.0" ripplerFill="#c36868" text="Back">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1631.0" layoutY="890.0" onAction="#ProceedOnAction" prefHeight="89.0" prefWidth="190.0" ripplerFill="#5b79b5" text="Proceed →">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="1197.0" layoutY="316.0" orientation="VERTICAL" prefHeight="364.0" prefWidth="26.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9fbfc" height="200.0" layoutX="-1.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="642.0" />
+      <Label layoutX="23.0" layoutY="238.0" prefHeight="149.0" prefWidth="524.0" text="Customer Details" textFill="#a1a1a1">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="463.0" prefHeight="149.0" prefWidth="588.0" text="Package Details" textFill="#171717">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="659.0" prefHeight="149.0" prefWidth="582.0" text="Payment Details" textFill="#a1a1a1">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBrand" layoutX="855.0" layoutY="463.0" prefHeight="40.0" prefWidth="232.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="lblModel" layoutX="855.0" layoutY="560.0" prefHeight="40.0" prefWidth="232.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="lblFuel" layoutX="872.0" layoutY="626.0" prefHeight="40.0" prefWidth="232.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="lblEmpId" layoutX="1534.0" layoutY="483.0" prefHeight="40.0" prefWidth="232.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="lblDriverName" layoutX="1542.0" layoutY="586.0" prefHeight="40.0" prefWidth="232.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="lblDriverAddress" layoutX="1542.0" layoutY="684.0" prefHeight="40.0" prefWidth="232.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <JFXButton layoutX="1103.0" layoutY="389.0" onAction="#CarSearchOnAction" prefHeight="40.0" prefWidth="52.0" text="Go" />
+      <JFXButton layoutX="1784.0" layoutY="389.0" onAction="#DriverSearchOnAction" prefHeight="40.0" prefWidth="52.0" text="Go" />
+      <JFXTextField fx:id="txtPackageId" layoutX="687.0" layoutY="137.0" prefHeight="67.0" prefWidth="325.0" promptText="Enter Package ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbCustomerId" layoutX="1037.0" layoutY="137.0" onAction="#cmbCustomerOnAction" prefHeight="67.0" prefWidth="294.0" promptText="Customer Id" />
+      <Label layoutX="1381.0" layoutY="153.0" prefHeight="51.0" prefWidth="69.0" text="Date :" textFill="#868383">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="682.0" layoutY="237.0" prefHeight="17.0" prefWidth="1159.0" />
+      <Label fx:id="lblDate" layoutX="1450.0" layoutY="159.0" prefHeight="40.0" prefWidth="221.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCarId" layoutX="822.0" layoutY="376.0" prefHeight="40.0" prefWidth="284.0" />
+      <JFXTextField fx:id="txtDriverId" layoutX="1500.0" layoutY="376.0" prefHeight="40.0" prefWidth="284.0" />
+      <Label layoutX="681.0" layoutY="684.0" prefHeight="51.0" prefWidth="177.0" text="Availability :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailability" layoutX="823.0" layoutY="695.0" prefHeight="32.0" prefWidth="232.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.lunuvilacarrental.controller.FinanceManageController">
+   <children>
+      <ImageView fitHeight="1088.0" fitWidth="1934.0" layoutX="-12.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Desktop-1(3).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="672.0" layoutY="30.0" prefHeight="71.0" prefWidth="774.0" text="Finance Management">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Label>
+      <Separator layoutX="734.0" layoutY="117.0" prefHeight="40.0" prefWidth="586.0" />
+      <JFXButton buttonType="RAISED" layoutX="1679.0" layoutY="906.0" onAction="#BackOnAction" prefHeight="80.0" prefWidth="179.0" ripplerFill="#c36161" text="Back" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1478.0" layoutY="905.0" onAction="#AddOnAction" prefHeight="74.0" prefWidth="175.0" text="Add">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="522.0" fitWidth="715.0" layoutX="1103.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/about-us-768x536.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="-221.0" layoutY="88.0" onAction="#CustomerOnAction" prefHeight="159.0" prefWidth="865.0" ripplerFill="#b2b2b2" text="Customers" textFill="#ababab" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="-209.0" layoutY="659.0" onAction="#EmployeeOnAction" prefHeight="159.0" prefWidth="855.0" ripplerFill="#b2b2b2" text="Employees" textFill="#ababab" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="-344.0" layoutY="477.0" onAction="#CarOnAction" prefHeight="159.0" prefWidth="990.0" ripplerFill="#b2b2b2" text="Cars" textFill="#ababab" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="-198.0" layoutY="288.0" onAction="#RentDetailsOnAction" prefHeight="159.0" prefWidth="860.0" ripplerFill="#b2b2b2" text="Rent Details" textFill="#ababab" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="-272.0" layoutY="847.0" onAction="#FinanceOnAction" prefHeight="159.0" prefWidth="919.0" ripplerFill="#b2b2b2" style="-fx-background-color: white;" text="Finance" textFill="#111010" wrapText="true">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="817.0" layoutY="579.0" onAction="#IncomeOnAction" prefHeight="97.0" prefWidth="376.0" style="-fx-background-color: #3c6382; -fx-background-radius: 25;" text="Income" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#13326e" />
+                  <Stop color="#166dd7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1283.0" layoutY="581.0" onAction="#VehicleExpensesOnAcyion" prefHeight="97.0" prefWidth="376.0" style="-fx-background-color: #3c6382; -fx-background-radius: 25;" text="Vehicle Expenses" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#13326e" />
+                  <Stop color="#166dd7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="817.0" layoutY="739.0" onAction="#SalaryOnAction" prefHeight="97.0" prefWidth="376.0" style="-fx-background-color: #3c6382; -fx-background-radius: 25;" text="Salary" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#13326e" />
+                  <Stop color="#166dd7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1290.0" layoutY="739.0" onAction="#ReportOnAction" prefHeight="97.0" prefWidth="376.0" style="-fx-background-color: #3c6382; -fx-background-radius: 25;" text="Reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#13326e" />
+                  <Stop color="#166dd7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+</AnchorPane>
